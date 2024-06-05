@@ -1,0 +1,55 @@
+import java.util.*;
+
+public class greatest {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+
+    
+        if (a >= 0) {
+            System.out.println("a is positive");
+        } else {
+            System.out.println("a is negative");
+        }
+
+        if (b >= 0) {
+            System.out.println("b is positive");
+        } else {
+            System.out.println("b is negative");
+        }
+
+        if (c >= 0) {
+            System.out.println("c is positive");
+        } else {
+            System.out.println("c is negative");
+        }
+
+        if (a == b && b == c) {
+            System.out.println("All the numbers are equal and the number is: " + a);
+        } else {
+            
+            double greatest;
+            if (a >= b && a >= c) {
+                greatest = a;
+            } else if (b >= a && b >= c) {
+                greatest = b;
+            } else {
+                greatest = c;
+            }
+            System.out.println("The greatest number is: " + greatest);
+        }
+
+        if (a >= 0 && b >= 0 && c >= 0) {
+            System.out.println("All numbers are positive.");
+        } else if (a < 0 && b < 0 && c < 0) {
+            System.out.println("All numbers are negative.");
+        } else {
+            System.out.println("Combination of both positive and negative numbers.");
+        }
+
+       
+    }
+}
