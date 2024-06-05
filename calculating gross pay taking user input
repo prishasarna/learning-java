@@ -1,0 +1,27 @@
+import java.util.*;
+        public class employee{
+            /*basic salary and name input 
+            calculate the gross pay=netpay-provident fund 
+            da=25% of bs 
+            hr=15% of bs
+            pf =8.33% of bs 
+            net pay=bs+da+hra
+            gross pay=netpay-pf */
+            public static void main(String[] args)
+            {   Scanner sc=new Scanner(System.in);
+                System.out.println("Enter employee name:");
+                String e= sc.nextLine();
+                System.out.println("Employee name:"+e);
+                System.out.println("Base salary:");
+                double bs=sc.nextDouble();
+                double da=(double)(0.25*bs);
+                double hr=(double)(0.15*bs);
+                double pf=(double)(0.0833*bs);
+                double np=(double)(bs+da+hr);
+                double gp=(double)(np-pf);
+                System.out.println("Gross pay is:" + gp);
+                sc.close();
+
+                }
+            }
+            
