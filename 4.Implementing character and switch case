@@ -1,0 +1,55 @@
+///switch cases 
+/*switch{
+    case 1:
+        task 1}
+break
+and after many cases we have the default case in case all the desired and given cases fail
+also:- all cases of the switch statement have a break except the defualt case */
+//example is character switch 
+// switch cases using character
+///switch cases 
+/*switch{
+    case 1:
+        task 1}
+break
+and after many cases we have the default case in case all the desired and given cases fail
+also:- all cases of the switch statement have a break except the defualt case */
+//example is character switch 
+
+import java.util.*;
+public class switchch{
+    public static void main(String[] args) {
+     Scanner sc= new Scanner(System.in);
+     System.out.println("enter first number:");
+     int a=sc.nextInt();
+     System.out.println("enter second number :");
+     int b=sc.nextInt();
+     System.out.println("enter your choice of character[a,d,m,s]:");
+     char ch=sc.next().charAt(0);
+     switch(ch){
+        case 'a':
+        int add= a+b;
+        System.out.println(add);
+        break;
+        case 's':
+        int sub= a-b;
+        System.out.println(sub);
+        break;
+        case'm':
+        int mul= a*b;
+        System.out.println(mul);
+        break;
+        case 'd':
+        int div= a/b;
+        System.out.println(div);
+        break;
+    default:
+         System.out.println("Wrong choice");
+    
+     }
+     
+}
+}
+
+
+
