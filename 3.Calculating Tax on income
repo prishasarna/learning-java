@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class TaxableIncome {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter your age:");
+        int age = sc.nextInt();
+        
+        System.out.println("Enter your gender:");
+        String gender = sc.next();
+        
+        System.out.println("Enter your income:");
+        double taxableIncome = sc.nextDouble();
+        
+        double income = 0; 
+
+        if (age >= 65 || gender.equals("female")) {
+            System.out.println("Wrong category");
+        } else if (gender.equals("male") && age < 65) {
+            if (taxableIncome < 160000) {
+                System.out.println("Tax to be paid on income is NIL");
+            } else if (taxableIncome >= 160000 && taxableIncome <= 500000) {
+                income = (taxableIncome - 160000) * 0.10;
+                System.out.println("Tax to be paid on income is " + income);
+            } else if (taxableIncome > 500000 && taxableIncome <= 800000) {
+                income = ((taxableIncome - 500000) * 0.20) + 34000;
+                System.out.println("Tax to be paid on income is " + income);
+            } else if (taxableIncome > 800000) {
+                income = ((taxableIncome - 800000) * 0.30) + 94000;
+                System.out.println("Tax to be paid on income is " + income);
+            }
+        }
+    }   
+    }
