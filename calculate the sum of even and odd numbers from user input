@@ -1,0 +1,27 @@
+///Take  a number input form the user and calculate the sum of even and odd numbers
+//also add another opption of entering 0 if user wants to quit 
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int S1= 0;
+        int S2 = 0;
+        while(n!= 0){
+        if(n>0&&n% 2 == 0)
+                S1=S1+n;
+           
+    
+        if(n<0 && n%2 !=0)
+                S2=S2+n;
+        System.out.println("Do you wish to continue ?");
+        System.out.println("Enter a character to continue or 0 to quit ");
+        n = sc.nextInt();
+            
+        }
+        System.out.println(" The sum of even numbers is:"+S1);
+        System.out.println(" The sum of odd numbers is:"+S2);
+
+    
+    }
+
+}
