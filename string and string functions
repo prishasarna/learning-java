@@ -1,0 +1,79 @@
+public class Main {
+    public static void main(String[] args) {
+        char a = 'p';
+        char b = '9';
+        char c = ' ';
+        
+        // Check if 'a' is a letter
+        boolean isLetter = Character.isLetter(a);
+        System.out.println("Is '" + a + "' a letter? " + isLetter);
+        
+        // Check if 'b' is a digit
+        boolean isDigit = Character.isDigit(b);
+        System.out.println("Is '" + b + "' a digit? " + isDigit);
+        
+        // Check if 'c' is a whitespace
+        boolean isWhitespace = Character.isWhitespace(c);
+        System.out.println("Is 'c' a whitespace? " + isWhitespace);
+        
+        // Check if 'a' is a letter or digit
+        boolean isLetterOrDigit = Character.isLetterOrDigit(a);
+        System.out.println("Is '" + a + "' a letter or digit? " + isLetterOrDigit);
+        
+        // Check if 'b' is a letter or digit
+        isLetterOrDigit = Character.isLetterOrDigit(b);
+        System.out.println("Is '" + b + "' a letter or digit? " + isLetterOrDigit);
+        
+        // Check if 'c' is a letter or digit
+        isLetterOrDigit = Character.isLetterOrDigit(c);
+        System.out.println("Is 'c' a letter or digit? " + isLetterOrDigit);
+        
+        // Checking if 'a' is in uppercase 
+        boolean isUpperCase = Character.isUpperCase(a);
+        System.out.println("Is '" + a + "' in uppercase? " + isUpperCase);
+
+        // Checking if 'a' is in lowercase
+        boolean isLowerCase = Character.isLowerCase(a);
+        System.out.println("Is '" + a + "' in lowercase? " + isLowerCase);
+
+        // Converting 'a' to uppercase
+        char upperCaseA = Character.toUpperCase(a);
+        System.out.println("Uppercase of '" + a + "': " + upperCaseA);
+
+        // Converting 'a' to lowercase
+        char lowerCaseA = Character.toLowerCase(a);
+        System.out.println("Lowercase of '" + a + "': " + lowerCaseA);
+    }
+}
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        char a = 'p';
+        char b = '9';
+        char c = ' ';
+        int i =98;
+        String r ="computer";
+        String e ="apple"  ; 
+        String y ="malayalam";
+        int m = (int) a;
+        System.out.println(m);
+        char t =(char)i;
+        System.out.println(t);
+        int l = r.length();
+        System.out.println(r);
+        char ch= e.charAt(0);
+        int x= e.indexOf('p');
+        int f=y.lastIndexOf('a');
+        System.out.println(x);
+        System.out.println(f);
+        System.out.println(ch);
+        System.out.println(y.substring(3,6));
+        
+        
+        
+        
+    }}
+        
+       
